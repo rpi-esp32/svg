@@ -10,7 +10,11 @@
 
 
 
+h1 = document.getElementById('H1')
+hh1 = document.getElementById('HH1')
 
+h1.innerHTML = 'inside of h1 tag'
+hh1.innerHTML = 'inside of h2 tag'
 
 const doMain = () => {
 
