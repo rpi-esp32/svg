@@ -1,3 +1,8 @@
+:root{
+  --test-color: red;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +10,7 @@
   }
   
   svg {
-    filter: blur(6px);
+    filter: blur(0px);
   }
 
 
@@ -46,4 +51,8 @@
   h1 {
     color: #e74c3c;
     margin-bottom: 0.5rem;
+  }
+
+  .c {
+    background-color: var(--test-color);
   }
