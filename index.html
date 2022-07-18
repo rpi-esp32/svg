@@ -78,9 +78,13 @@
         } */
         let div = document.createElement("div")
         let p = document.createElement("p")
+
         div.append("Some text", p)
         div.innerHTML = "asfasdfsadfasdfsdafasdfdsafadsfjlds;jljasf";
 
+
+        document.append(div);
+        
         console.log(div.childNodes) 
     </script>
 
