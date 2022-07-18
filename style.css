@@ -17,9 +17,11 @@
   div {
     border: solid red 1px;
     filter: blur(0px);
-    width: 500px;
+    width: 80vw;
+    margin-left: 10vw;
     background-color: burlywood;
-
+    border-radius: 10px;
+    height: 200;
   }
 
   body {
@@ -57,4 +59,9 @@
   .c {
     background-color: var(--test-color);
     width: 50%;
+  }
+
+
+  g {
+
   }
