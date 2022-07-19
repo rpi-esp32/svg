@@ -13,6 +13,20 @@
     filter: blur(0px);
   }
 
+  #container {
+    display: block;
+    background-color: bisque;
+    width: 40%;
+    height: 100px;
+    margin-left: 5px;
+    padding-left: 5px ;
+    /* text-align: center; */
+  }
+
+  #container .notWide {
+    background-color: blue;
+
+  }
 
   div {
     border: solid red 1px;
@@ -63,5 +77,5 @@
 
 
   g {
-
+    color: #e74c3c;
   }

@@ -38,7 +38,7 @@ function onFailure (msg) {
 
 }
 
-functon MQTTconnect () {
+function MQTTconnect () {
     console.log("connecting ...");
     mqtt = new Paho.MQTT.Client(host, port, "clientjs");
     mqtt.onMessageArrived = onMessageArrived;
