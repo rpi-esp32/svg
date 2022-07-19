@@ -1,4 +1,16 @@
 // http://www.steves-internet-guide.com/mqtt-websockets/
+// Using an External MQTT Broker with Websockets
+
+// If you can’t get websockets on your own broker then you can use as external one like :
+
+// test.mosquitto.org– uses port 8080 un-encrypted and 8081 for websockets over SSL.
+// iot.eclipse.org support only encrypted and uses port 443 for websockets over SSL..
+// broker.hivemq.com -uses port 8000 for websockets. Websockets over SSL not supported.
+// Here is a list of other test brokers with Port numbers: http://www.steves-internet-guide.com/mqtt-hosting-brokers-and-servers/#list
+
+
+
+
 // http://www.steves-internet-guide.com/using-javascript-mqtt-client-websockets/
 
 
