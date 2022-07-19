@@ -1,5 +1,4 @@
-let receiveMedia = ["ws", "mqtt", "ble", "lora",];   // modify as needed
-let sendMedia = ["ws", "mqtt", "ble", "lora",];      // modify as needed
+
 let data = ["type", 1, "label", "value", "sender", "receiver", "medium", "topic", "time",];
 let sendMethods = [];
 let sendDataSubscribers = [];

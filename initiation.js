@@ -1,3 +1,6 @@
+let receiveMedia = ["ws", "mqtt", "ble", "lora",];   // modify as needed
+let sendMedia = ["ws", "mqtt", "ble", "lora",];      // modify as needed
+
 let ws;     // use only ws.send()
 let mqtt;   // use only mqtt.send()
 

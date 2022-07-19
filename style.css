@@ -14,6 +14,47 @@
     filter: blur(0px);
   }
 
+  .grid-container {
+    display: grid;
+    gap: 1rem;
+    margin: 0em;
+    width: 100%;
+  }
+
+  @media (min-width: 20em) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: 30em) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 50em) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 60em) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .grid-container >div {
+    /* display: inline; */
+    background-color: rgb(119, 51, 102);
+    border-radius: 0.3em;
+    padding-left: 1em;
+    width: 15em;
+
+  }
+
+
   #container {
     display: block;
     background-color: bisque;
