@@ -30,11 +30,11 @@ function onConnect () {
     mqtt.send(message);
 }
 
-function onMessageArrived (message) {
+function onMessageArrived (msg) {
 
 }
 
-function onFailure (message) {
+function onFailure (msg) {
 
 }
 
