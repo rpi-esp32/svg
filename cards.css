@@ -1,0 +1,96 @@
+:root {
+  font-size: 16px;
+  --bkg: red;
+  --txt: black;
+  --active-high: rgb(233, 156, 14);
+  --active-low: rgb(245, 245, 99);
+  --silent: white;
+  --pulse: 3s;
+}
+
+@media (min-width: 20em) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 30em) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 50em) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 60em) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.silent {
+  filter: blur(2);
+  background-color: var(--silent);
+}
+
+.active {
+  filter: blur(0);
+  animation: active var(--pulse) ease-in-out infinite alternate;
+}
+
+@keyframes active {
+  from {
+    scale: 0.5;
+    filter: blur(0);
+    border-radius: 0rem;
+    background-color: var(--active-low);
+    text-shadow: 0 0 72px var(--txt);
+    color: transparent;
+  }
+  to {
+    scale: 1.5;
+    filter: blur(15);
+    border-radius: 1rem;
+    background-color: var(--active-high);
+    text-shadow: 0;
+    color: var(--txt);
+  }
+}
+
+body {
+  background: #fdfdfd;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+}
+
+section {
+  background-color: var(--bkg);
+  display: grid;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap: 1rem;
+  margin: 0em;
+  width: 100%;
+}
+
+figure {
+  /* display: inline; */
+  background-color: var(--active-high);
+  border-radius: 1em;
+  padding-left: 1em;
+  /* width: 15em; */
+  /* animation: active var(--pulse) ease-in-out infinite alternate; */
+}
+
+output {
+  margin: 0;
+  padding: 0.1rem;
+  display: block;
+  box-sizing: border-box;
+}
